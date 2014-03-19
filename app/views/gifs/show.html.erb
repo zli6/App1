@@ -1,0 +1,70 @@
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<script src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
+  <meta charset="utf-8">
+
+<div class=container> 
+   <div class=row>
+     <div class=col-md-6> 
+      <img src="<%= @gif.image_url %>">
+     </div>
+     <div class=col-md-6>
+<h1><%= @gif.title %></h1>
+
+<h3> Description:<h3>
+<h4> <%= @gif.description %> <h4>
+  <h3> Tags: </h3>
+  <h4><%= @gif.tags %></h4>
+  
+
+  
+  <%= link_to 'Edit', edit_gif_path(@gif) %> |
+<%= link_to 'Back', gifs_path %>
+  </div> 
+  </div>
+ </div>
+ </div>
+ </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @gif.title %>
+</p>
+
+<p>
+  <strong>Image url:</strong>
+  <%= @gif.image_url %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @gif.description %>
+</p>
+
+<p>
+  <strong>Tags:</strong>
+  <%= @gif.tags %>
+</p>
+
+
